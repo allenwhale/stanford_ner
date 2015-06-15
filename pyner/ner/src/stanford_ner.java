@@ -10,6 +10,7 @@ import edu.stanford.nlp.ling.CoreLabel;
 public class stanford_ner {
 	public static CRFClassifier<CoreLabel> segmenter;
 	private static ExtractDemo extractdemo;
+	private static Boolean started = false;
 	static {
 		//
 		Properties props = new Properties();
@@ -46,16 +47,24 @@ public class stanford_ner {
 	}
 	
 	public ArrayList<String> Execute(String msg){
+		System.out.println(msg);
 		return Ner(doSegment(msg));
 	}
 	
 	public stanford_ner(){
 		extractdemo = new ExtractDemo();
+		started = true;
+	}
+	
+	public Boolean check_started(){
+		return started;
 	}
 	
 	public static void main(String[] args) {
 		GatewayServer gatewayServer = new GatewayServer(new stanford_ner());
         gatewayServer.start();
         System.out.println("server started");
+        
+        System.out.println(started.toString());
 	}
 }

@@ -6,6 +6,7 @@ pyner/ner/data/
 pyner/ner/classifiers/
 *.jar
 !ner_test.jar
+!ner_test1_7.jar
 
 # C extensions
 *.so
