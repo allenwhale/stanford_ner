@@ -1,6 +1,11 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+.*.sw[po]
+pyner/ner/data/
+pyner/ner/classifiers/
+*.jar
+!ner_test.jar
 
 # C extensions
 *.so
