@@ -8,6 +8,7 @@ import subprocess as sp
 
 def close(sig, frame):
     java.kill()
+    exit(0)
 
 if __name__ == '__main__':
     java_ner = ''
