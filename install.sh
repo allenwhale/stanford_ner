@@ -1,0 +1,4 @@
+wget https://6e5a48279169bd642a656b9f37318cff26cc3478.googledrive.com/host/0B3WhCcREKJPcfnhtTnVQWEFsZDdlQlotRTZ3cHRvY0dxME1rSDVXWG1GMGxkYVFlY01xUTg/data.zip
+wget https://6e5a48279169bd642a656b9f37318cff26cc3478.googledrive.com/host/0B3WhCcREKJPcfnhtTnVQWEFsZDdlQlotRTZ3cHRvY0dxME1rSDVXWG1GMGxkYVFlY01xUTg/classifiers.zip
+unzip data.zip -d pyner/ner/
+unzip classifiers.zip -d pyner/ner/
